@@ -1,0 +1,127 @@
+.our-services {
+   background-image: url(../../img/our-services/backgd.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   padding-top: toRem(212);
+   padding-bottom: toRem(85);
+
+
+   &__content {
+      display: flex;
+      text-align: center;
+      gap: toRem(30);
+      margin-bottom: toRem(80);
+
+   }
+
+   &__item {
+      width: 25%;
+      border: 1px solid $gray-300;
+      border-radius: 4px;
+      box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+      background: $white;
+      padding: toRem(92) toRem(40);
+      position: relative;
+
+      &::after {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background-color: rgba($gray-900, .6);
+         opacity: 0;
+         z-index: 10;
+      }
+
+      &::before {
+         content: '';
+         background-image: url(../../img/our-services/image.jpg);
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+         z-index: 5;
+         opacity: 0;
+
+      }
+
+      &:hover::before {
+         opacity: 1;
+      }
+
+      &:hover::after {
+         opacity: 1;
+      }
+
+      &:hover .our-services__title {
+         color: $white;
+
+      }
+
+      &:hover .our-services__icon {
+         color: $white;
+      }
+
+
+   }
+
+
+   &__icon {
+      font-size: toRem(50);
+      color: $primary;
+
+
+   }
+
+   &__title {
+      font-family: $fontFamily;
+      font-weight: 700;
+      font-size: toRem(20);
+      line-height: 150%;
+      color: $gray-900;
+      padding-top: toRem(27);
+   }
+
+   &__text {
+      font-family: $fontFamily;
+      font-weight: 700;
+      font-size: toRem(28);
+      line-height: 150%;
+      color: $gray-900;
+      padding-top: toRem(80);
+   }
+
+   &__link {
+      display: inline-block;
+      font-family: $fontFamily;
+      font-weight: 700;
+      font-size: toRem(16);
+      line-height: 325%;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $white;
+      background: $primary;
+      border-radius: 4px;
+      padding: toRem(0) toRem(40);
+   }
+
+   &__picture {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+   }
+
+   &__body{
+      position: relative;
+      z-index: 15;
+   }
+
+
+}

@@ -1,0 +1,45 @@
+.portfolio-work {
+    padding-top: toRem(120);
+    padding-bottom: toRem(100);
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 toRem(-15) 0 toRem(-15);
+        row-gap: toRem(30);
+    }
+
+    &__item {
+        width: 33.3333333%;
+        padding: 0 toRem(15) 0 toRem(15);
+       
+    }
+
+    &__title{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(20);
+        line-height: 150%;
+        color: $gray-900;
+        margin-bottom: toRem(4);
+        text-align: center;
+    }
+
+    &__text{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(14);
+        line-height: 150%;
+        color: $gray-700;
+        text-align: center;
+    }
+
+    &__content{
+        box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+        background: $white;
+        padding: toRem(16) toRem(20) toRem(24);
+        border-radius: 4px;
+
+
+    }
+}

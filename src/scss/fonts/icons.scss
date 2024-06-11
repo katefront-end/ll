@@ -1,0 +1,133 @@
+%ic { 
+    font-family: "icons"; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    line-height: 1; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+   } 
+    
+   [class*="_icon-"] { 
+    &:before { 
+     @extend %ic; 
+     display: block; 
+    } 
+   }
+  
+  ._icon-convert:before {
+    content: "\e900";
+  }
+  ._icon-arrow:before {
+    content: "\e901";
+  }
+  ._icon-attach:before {
+    content: "\e902";
+  }
+  ._icon-braces:before {
+    content: "\e903";
+  }
+  ._icon-brain:before {
+    content: "\e904";
+  }
+  ._icon-budget:before {
+    content: "\e905";
+  }
+  ._icon-camera:before {
+    content: "\e906";
+  }
+  ._icon-chat:before {
+    content: "\e907";
+  }
+  ._icon-check:before {
+    content: "\e908";
+  }
+  ._icon-chek-2:before {
+    content: "\e909";
+  }
+  ._icon-chevron:before {
+    content: "\e90a";
+  }
+  ._icon-clock:before {
+    content: "\e90b";
+  }
+  ._icon-construction:before {
+    content: "\e90c";
+  }
+  ._icon-contract:before {
+    content: "\e90d";
+  }
+  ._icon-facebook:before {
+    content: "\e90e";
+  }
+  ._icon-hand:before {
+    content: "\e90f";
+  }
+  ._icon-heart:before {
+    content: "\e910";
+  }
+  ._icon-helmet:before {
+    content: "\e911";
+  }
+  ._icon-house:before {
+    content: "\e912";
+  }
+  ._icon-in:before {
+    content: "\e913";
+  }
+  ._icon-like:before {
+    content: "\e914";
+  }
+  ._icon-line:before {
+    content: "\e915";
+  }
+  ._icon-location:before {
+    content: "\e916";
+  }
+  ._icon-messanger:before {
+    content: "\e917";
+  }
+  ._icon-minus:before {
+    content: "\e918";
+  }
+  ._icon-mute:before {
+    content: "\e919";
+  }
+  ._icon-painting:before {
+    content: "\e91a";
+  }
+  ._icon-pantone:before {
+    content: "\e91b";
+  }
+  ._icon-phone:before {
+    content: "\e91c";
+  }
+  ._icon-plan:before {
+    content: "\e91d";
+  }
+  ._icon-play:before {
+    content: "\e91e";
+  }
+  ._icon-plus:before {
+    content: "\e91f";
+  }
+  ._icon-share:before {
+    content: "\e920";
+  }
+  ._icon-slippers:before {
+    content: "\e921";
+  }
+  ._icon-success:before {
+    content: "\e922";
+  }
+  ._icon-twitter:before {
+    content: "\e923";
+  }
+  ._icon-whatsapp:before {
+    content: "\e924";
+  }
+  ._icon-youTube:before {
+    content: "\e925";
+  }
+  

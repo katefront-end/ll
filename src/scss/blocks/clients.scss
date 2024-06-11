@@ -1,0 +1,61 @@
+.clients{
+    background-color: $gray-200;
+    padding-top: toRem(85);
+  
+
+    &__container{
+        display: flex;
+        gap: toRem(135);
+    }
+
+    &__text{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-800;
+        margin-bottom: toRem(24);
+    }
+
+    &__name{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-900;
+        margin-bottom: toRem(4);
+    }
+
+    &-swiper{
+        width: toRem(600) !important;
+        position: relative;
+    }
+
+    &__position{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(14);
+        line-height: 150%;
+        color: $gray-700;
+    }
+
+    &__buttons{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+
+    }
+
+    &__img{
+        display: block;
+        max-width: 100%;
+
+        margin-bottom: -60px;
+    }
+
+    &__logo{
+        margin-bottom: toRem(24);
+    }
+}

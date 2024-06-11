@@ -1,0 +1,50 @@
+.design {
+    padding-top:toRem(120);
+    padding-bottom: toRem(180);
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: toRem(80);
+        margin-bottom: toRem(120);
+    }
+
+    &__title{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(32);
+        line-height: 150%;
+        color: $gray-900;
+        margin-bottom: toRem(24);
+    }
+
+    &__text{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-700;
+        margin-bottom: toRem(48);
+    }
+
+    &__link{
+        display: inline-block;
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(14);
+        line-height: 314%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $primary;
+        border: 1px solid $primary;
+        border-radius: 4px;
+        padding: 0px 32px;
+        
+    }
+
+}

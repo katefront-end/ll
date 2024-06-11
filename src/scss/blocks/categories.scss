@@ -1,0 +1,142 @@
+.categories {
+    padding-top: toRem(120);
+    padding-bottom: toRem(180);
+
+    &__title {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(46);
+        line-height: 130%;
+        text-align: center;
+        color: $gray-900;
+        margin-bottom: toRem(40);
+    }
+
+    &__link {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-600;
+        text-align: center;
+    }
+
+    &__row {
+        display: flex;
+    
+        align-items: center;
+        
+        margin-bottom: toRem(69);
+    }
+
+    &__errow{
+        display: inline-block;
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        color: $primary;
+        border: 1px solid $primary;
+        border-radius: 4px;
+        padding: 10px;
+        width: 100%;
+       
+        
+    }
+
+    &__item{
+        width: 50%;
+        padding: 0 15px;
+    }
+
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        row-gap: 60px;
+    }
+
+    &__text{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(20);
+        line-height: 150%;
+        color: $gray-900;
+        margin-bottom: toRem(12);
+
+        &:hover{
+            color: $primary;
+        }
+    }
+
+    &__link{
+        display: inline-block;
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(14);
+        line-height: 150%;
+        color: $gray-700;
+       
+        padding: 10px;
+    }
+
+    &__subtitle{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-800;
+
+        &:hover{
+            color: $primary;
+        }
+    }
+
+    &__bottom{
+        box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+        background: $white;
+        border-radius: 4px;
+        padding: toRem(24) toRem(24) toRem(21);
+    }
+
+    &__wow{
+        display: inline-block;
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(14);
+        line-height: 150%;
+        color: $gray-700;
+        margin-bottom: toRem(16);
+        position: relative;
+        padding-left: toRem(16);
+
+        &::before{
+            content: "\e907";
+            position: absolute;
+            font-family: "icons"; 
+            top: 8px;
+            left: -8px;
+        }
+
+        &:hover{
+            color: $primary;
+        }
+    }
+
+
+    &__span{
+        display: inline-block;
+        margin: 0 12px 0;
+    }
+
+    &__img{
+        display: block;
+        max-width: 100%;
+
+    }
+
+    &__parent{
+        width: 16.6666667%;
+    }
+}

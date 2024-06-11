@@ -1,0 +1,123 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.main-top {
+    text-align: center;
+    margin-bottom: toRem(60);
+
+}
+
+.main-title {
+    font-family: $fontFamily;
+    font-weight: 700;
+    font-size: toRem(46);
+    line-height: 130%;
+    color: $gray-900;
+    margin-bottom: toRem(24);
+  
+}
+
+.main-text {
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: toRem(18);
+    line-height: 150%;
+    color: $gray-700;
+}
+
+.default-info__title {
+    font-family: $fontFamily;
+    font-weight: 700;
+    font-size: toRem(28);
+    line-height: 150%;
+    color: $gray-900;
+}
+
+.default-info__btn {
+    display: inline-block;
+    font-family: $fontFamily;
+    font-weight: 700;
+    font-size: toRem(16);
+    line-height: 325%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    background: $primary;
+    border-radius: 4px;
+    padding: 0px 40px;
+}
+
+.default-info {
+    display: flex;
+    gap: toRem(40);
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    width: toRem(48);
+    height: toRem(48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $gray-800;
+    font-size: toRem(13);
+
+    &:hover{
+        background-color: $primary;
+        color: $white;
+        border-radius: 50%;
+
+    }
+
+    &.arrow--right {
+        transform: rotate(-180deg);
+
+
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+}
+
+.dev-home{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $gray-200;
+
+    &.services--home{
+        background-image: url(../img/dev-home/background.png);
+        
+    }
+
+    &.interior--home{
+        background-image: url(../img/interior/background.png);
+    }
+
+    &.work--home{
+        background-image: url(../img/work/background.png);
+    }
+
+    &.about-home{
+        background-image: url(../img/about/background.png);
+    }
+    &.modern--home{
+        height: auto;
+        padding: 80px 0 100px;
+    }
+
+    &.positions-home{
+        background-image: url(../img/positions/background.png);
+    }
+
+    &.news-home{
+        background-image: url(../img/news/background.png);
+    }
+
+    &.contact-home{
+        background-image: url(../img/contact/background.png);
+    }
+}

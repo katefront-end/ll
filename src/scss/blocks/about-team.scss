@@ -1,0 +1,113 @@
+.about-team {
+    padding-top: toRem(180);
+    padding-bottom: toRem(120);
+
+    &__title {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(46);
+        line-height: 130%;
+        text-align: center;
+        color: $gray-900;
+        margin-bottom: toRem(24);
+    }
+
+    &__text {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(18);
+        line-height: 150%;
+        text-align: center;
+        color: $gray-700;
+        margin-bottom: toRem(60);
+    }
+
+    &__subtitle {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(20);
+        line-height: 150%;
+        text-align: center;
+        color: $gray-800;
+    }
+
+    &__text--two {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        text-align: center;
+        color: $gray-700;
+    }
+
+    &__content {
+        padding: 16px 0 60px 0;
+    }
+
+    &__item {
+        padding: 0 toRem(15) 0 toRem(15);
+        width: 25%;
+
+        &:hover .about-team__social{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 toRem(-15) 0 toRem(-15);
+
+    }
+
+
+    &__subtitle--two {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(18);
+        line-height: 150%;
+        text-align: center;
+        color: $gray-900;
+    }
+
+    &__link {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(18);
+        line-height: 150%;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-align: center;
+        color: $primary;
+    }
+
+    &__social {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        background: rgba($primary, .7);
+        border-radius: 0 0 4px 4px;
+        padding: 20px;
+        opacity: 0;
+        transform: translateY(60px);
+
+    }
+
+    &__btn {
+        font-family: "icons"; 
+        font-size: 18px;
+        margin-left: 13px;
+        color: $white;
+    }
+
+    &__photo{
+        position: relative;
+
+    }
+}

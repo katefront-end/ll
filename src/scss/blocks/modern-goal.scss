@@ -1,0 +1,74 @@
+.modern-goal {
+    padding-top: toRem(100);
+    padding-bottom: toRem(120);
+
+    &__title {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(46);
+        line-height: 130%;
+        color: $gray-900;
+        margin-bottom: toRem(40);
+    }
+
+    &__text {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(18);
+        line-height: 150%;
+        color: $gray-800;
+        margin-bottom: toRem(40);
+
+        &:last-child{
+            margin: 0;
+        }
+
+    }
+
+    &__row {
+        display: flex;
+        gap: toRem(135);
+
+    }
+
+
+    &__left {
+        width: 600px;
+    }
+
+    &__right {
+        width: 495px;
+        box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+        background: $white;
+        border-radius: 4px;
+        padding: 40px 60px;
+    }
+
+    &__name{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-900;
+    }
+
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: toRem(16);
+
+        &:last-child{
+            margin: 0;
+        }
+    }
+
+    &__value{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-700;
+        min-width: 250px;
+    }
+}

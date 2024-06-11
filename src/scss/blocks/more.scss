@@ -1,0 +1,76 @@
+.more-form {
+    padding: toRem(48) toRem(60);
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+    background: $white;
+    position: relative;
+    top: toRem(92);
+
+
+    &__title {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(28);
+        line-height: 150%;
+        text-align: center;
+        color: $gray-900;
+        margin-bottom: toRem(32);
+
+    }
+
+    &__content {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: $gray-800;
+    }
+
+    &__send {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(14);
+        line-height: 314%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $white;
+        border-radius: 4px;
+        background: $primary;
+        padding: 0 toRem(32);
+    }
+
+    &__inner {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(8);
+
+    }
+
+    &__input {
+        width: toRem(260);
+        border: 1px solid $gray-400;
+        border-radius: 4px;
+        padding: toRem(11) toRem(16);
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(14);
+        line-height: 150%;
+        color: $gray-600;
+        border: 1px solid $gray-400;
+        border-radius: 4px;
+        background: $gray-200;
+        box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+
+    }
+
+    &__like {
+        width: toRem(414);
+    }
+
+}

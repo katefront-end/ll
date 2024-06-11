@@ -1,0 +1,148 @@
+.offices {
+    padding-top: toRem(80);
+    padding-bottom: toRem(125);
+    background: $gray-200;
+
+    &__title {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(46);
+        line-height: 130%;
+        text-align: center;
+        color: $gray-900;
+        margin-bottom: toRem(24);
+    }
+
+    &__subtitle {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: $gray-700;
+        margin-bottom: toRem(60);
+    }
+
+    &__row {
+        display: flex;
+        gap: 240px;
+        margin-bottom: toRem(120);
+    }
+
+
+    &__item {
+        width: 33.3333333%;
+        position: relative;
+
+
+
+        &:not(:last-child)::after {
+            display: inline-block;
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -120px;
+            background-image: url(../../img/our/divider.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: toRem(1);
+            height: 100%;
+
+
+        }
+    }
+
+    &__text {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(28);
+        line-height: 150%;
+        color: $gray-900;
+        margin-bottom: toRem(24);
+    }
+
+    &__title-two {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-900;
+        margin-bottom: toRem(4);
+
+    }
+
+    &__text-two {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $primary;
+        margin-bottom: toRem(20);
+    }
+
+    &__span {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-700;
+    }
+
+
+    &__call {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-900;
+    }
+
+    &__email {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-900;
+    }
+
+    &__schedule {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-900;
+    }
+
+    &__subtitle__mini {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(46);
+        line-height: 130%;
+        color: $gray-900;
+        margin-bottom: toRem(40);
+        text-align: center;
+    }
+
+    &__picture-icon {
+        font-family: "icons";
+        font-size: toRem(27);
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+
+    &__together {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: toRem(27);
+
+
+    }
+}

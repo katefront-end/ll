@@ -1,0 +1,62 @@
+.history{
+    padding-top: toRem(180);
+    padding-bottom: toRem(100);
+    background: $gray-200;
+
+    &__title{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(46);
+        line-height: 130%;
+        color: $gray-900;
+        margin-bottom: toRem(60);
+    }
+
+    &__link{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(28);
+        line-height: 150%;
+        color: $gray-600;
+        margin-bottom: toRem(20);
+
+        &:hover{
+            color: $primary;
+        }
+    }
+
+    &-nav__btn--active{
+        color: $primary;
+    }
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list{
+        grid-column: 4 span;
+    }
+
+    &__swiper{
+         grid-column: 8 span;
+    }
+
+    &__img{
+        display: block;
+        margin-bottom: toRem(36);
+    }
+
+    &__swiper-text{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: $gray-800;
+    }
+
+    &__buttons{
+        display: flex;
+        align-items: center;
+    }
+}

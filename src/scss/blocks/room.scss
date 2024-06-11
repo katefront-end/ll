@@ -1,0 +1,80 @@
+.room{
+    padding-bottom: toRem(180);
+
+    &__title{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(46);
+        line-height: 130%;
+        color: $gray-900;
+        margin-bottom: toRem(24);
+    }
+
+    &__text{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(18);
+        line-height: 150%;
+        color: $gray-700;
+        margin-bottom: toRem(60);
+    }
+
+    &__content{
+        text-align: center;
+    }
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__picture__icon{
+        display: inline-block;
+        font-family: "icons";
+        color: $primary;
+        font-size: 48px;
+        margin-bottom: toRem(24);
+    }
+
+    &__subtitle{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(20);
+        line-height: 150%;
+        color: $gray-900;
+        margin-bottom: toRem(8);
+    }
+
+    &__mini-subtitle{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-700;
+        width: toRem(285);
+        margin: 0 auto;
+    }
+
+    &__item {
+        width: 33.3333333%;
+        position: relative;
+
+        &:not(:last-child)::after {
+            display: inline-block;
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: url(../../img/our/divider.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: toRem(1);
+            height: 100%;
+
+
+        }
+    }
+}

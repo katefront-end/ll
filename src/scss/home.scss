@@ -1,0 +1,70 @@
+.home{
+    
+    background-image: url(../img/header/pexels-pixabay-206359\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: toRem(220) 0 toRem(353);
+    
+
+
+    &__title{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(72);
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        color: $white;
+        margin-bottom: toRem(24);
+    }
+
+    &__text{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(20);
+        line-height: 150%;
+        color: $white;
+        margin-bottom: toRem(61);
+    }
+
+    &__link{
+        display: inline-block;
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(16);
+        line-height: 325%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $white;
+        border: toRem(1) solid #005aff;
+        border-radius: toRem(4);
+        padding: toRem(0) toRem(40); 
+
+       
+    }
+
+    &__btn{
+        display: inline-block;
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(16);
+        line-height: 325%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $white;
+        border-radius: toRem(4);
+        padding: toRem(0) toRem(40);
+        background-color:#005aff;
+    }
+
+    &__row{
+        width: toRem(595);
+    }
+
+    &__content{
+        display: flex;
+        gap: toRem(24);
+    }
+}

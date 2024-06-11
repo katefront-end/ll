@@ -1,0 +1,135 @@
+.form{
+
+
+    background-image: url(../../img/way/image.png);
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: toRem(80) 0 ;
+
+    &__title{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(28);
+        line-height: 150%;
+        text-align: center;
+        color: $gray-900;
+        margin-bottom: toRem(24);
+    }
+
+    &__name{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(14);
+        line-height: 150%;
+        color: $gray-800;
+        margin-bottom: toRem(8);
+    }
+
+    &__input{
+       
+        background: $gray-200;
+        border: 1px solid $gray-400;
+        border-radius: 4px;
+        width: 100%;
+        padding: toRem(12) toRem(16) ;
+        
+
+        &::placeholder{
+            font-family: $fontFamily;
+            font-weight: 400;
+            font-size: toRem(14);
+            line-height: 150%;
+            color: $gray-600;
+        }
+    }
+
+    &-form{
+        padding: toRem(48) toRem(40);
+        border: 1px solid $gray-300;
+        border-radius: 4px;
+        width: 495px;
+        box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -6px rgba(30, 33, 44, 0.08), 0 26px 24px -10px rgba(30, 33, 44, 0.1), 0 60px 80px -20px rgba(30, 33, 44, 0.16);
+        background: $white;
+     
+     
+    }
+
+    &__textarea{
+        border: 1px solid $gray-400;
+        border-radius: toRem(4);
+        width: 100%;
+        background: $gray-200;
+        padding: toRem(11) toRem(16);
+        height: 66px;
+        margin-bottom: toRem(20);
+    }
+
+    &__container{
+            display: flex;
+            justify-content: flex-end;
+    }
+
+    &--two{
+        padding-left: toRem(28);
+        position: relative;
+
+        &::before{
+            content: '';
+            display: inline-block;
+            width: toRem(16);
+            height: toRem(16);
+            border: 1px solid $primary;
+            border-radius: toRem(3);
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+
+        &::after{
+            content: "\e908";
+            font-size: toRem(10);
+            opacity: 0;
+            position: absolute;
+            top: toRem(-3);
+            left: toRem(3);
+            color: #fff;
+            display: inline-block;
+            font-family: "icons"; 
+
+        }
+    }
+
+    &__check{
+        position: absolute;
+        opacity: 0;
+        clip: rect(0,0,0,0);
+
+        &:checked + .form__name::before{
+            background: $primary;
+            
+        }
+
+        &:checked + .form__name::after{
+            opacity: 1;
+
+        }
+    }
+
+    &__item{
+        margin-bottom: toRem(20);
+    }
+
+    &__form-btn{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(14);
+        line-height: 314%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $white;
+    }
+}

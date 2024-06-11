@@ -1,0 +1,117 @@
+.coments-form {
+padding-top: toRem(120);
+    padding-bottom:toRem(180);
+
+    &__title {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(46);
+        line-height: 130%;
+        text-align: center;
+        color: $gray-900;
+        margin-bottom: toRem(48);
+    }
+
+    &__name {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-800;
+        margin-bottom: toRem(8);
+    }
+
+    &__input {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-600;
+        border: 1px solid $gray-400;
+        border-radius: 4px;
+        background: $gray-200;
+        padding: toRem(13) toRem(16);
+        width: 100%;
+
+        &::placeholder {
+            font-family: $fontFamily;
+            font-weight: 400;
+            font-size: toRem(16);
+            line-height: 160%;
+            color: $gray-600;
+        }
+    }
+
+    &__email {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-800;
+        margin-bottom: toRem(8);
+    }
+
+    &__comment {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-800;
+        margin-bottom: toRem(8);
+    }
+
+    &__send {
+        display: inline-block;
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(16);
+        line-height: 325%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $white;
+        border-radius: 4px;
+        padding: 0px 40px;
+        background: $primary;
+        margin: 0 auto;
+    }
+
+    &__textarea{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-600;
+        border: 1px solid $gray-400;
+        border-radius: 4px;
+        background: $gray-200;
+        width: 100%;
+        height: 100px;
+        resize: none;
+        padding: toRem(13) toRem(16);
+        margin-bottom: toRem(48);
+
+        &::placeholder{
+            font-family: $fontFamily;
+            font-weight: 400;
+            font-size: toRem(16);
+            line-height: 160%;
+            color: $gray-600;
+        }
+    }
+
+        &__item{
+            width: 390px;
+        }
+
+        &__items{
+            width: 100%;
+        }
+}
+
+
+.coments-formes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: toRem(22) toRem(30);
+}

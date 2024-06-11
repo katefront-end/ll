@@ -1,0 +1,82 @@
+.coments__bottom {
+    padding-top: toRem(80);
+
+    &-title {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(46);
+        line-height: 130%;
+        text-align: center;
+        color: $gray-900;
+        margin-bottom: toRem(60);
+    }
+
+    &-name{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(18);
+        line-height: 150%;
+        color: $gray-900;
+        margin-bottom: toRem(8);
+    }
+
+    &-date{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(14);
+        line-height: 150%;
+        color: $gray-700;
+    }
+
+   &-item{
+    display: flex;
+    gap: toRem(30); 
+    margin-bottom: toRem(60);
+   }
+
+   &-left{
+        width: 150px;
+   }
+
+   &-right{
+    width: 630px;
+   }
+
+   &-text{
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: toRem(16);
+    line-height: 160%;
+    color: $gray-800;
+    margin-bottom: toRem(16);
+   }
+
+   &-link{
+    font-family: $fontFamily;
+    font-weight: 700;
+    font-size: toRem(16);
+    line-height: 160%;
+    color: $primary;
+   }
+   
+
+   &-subtitle{
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: toRem(14);
+    line-height: 150%;
+    color: $gray-700;
+    position: relative;
+    padding-left: toRem(25);
+
+    &::before{
+        font-family: "icons"; 
+        content: "\e920";
+        position: absolute;
+        font-size: toRem(15);
+        color: $gray-700;
+        top: 0;
+        left: 0;
+    }
+   }
+}

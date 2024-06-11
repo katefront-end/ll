@@ -1,0 +1,171 @@
+.us {
+    padding-top: toRem(121);
+    padding-bottom: toRem(120);
+
+    &__title {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 130%;
+        text-align: center;
+        color: $gray-900;
+        margin-bottom: toRem(24);
+    }
+
+    &__subtitle {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: $gray-700;
+        margin-bottom: toRem(60);
+    }
+
+    &__name {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: $gray-800;
+        margin-bottom: toRem(8);
+    }
+
+    &__input {
+        border: 1px solid $gray-400;
+        border-radius: 4px;
+        background: $gray-200;
+        padding: toRem(13) toRem(16);
+        margin-bottom: toRem(24);
+        width: 100%;
+
+        &::placeholder {
+            font-family: $fontFamily;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: $gray-600;
+        }
+    }
+
+    &__messenger {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: $gray-800;
+        margin-bottom: toRem(8);
+    }
+
+    &__textarea {
+        border: 1px solid $gray-400;
+        border-radius: 4px;
+        background: $gray-200;
+        padding: toRem(13) toRem(16);
+        resize: none;
+        width: 100%;
+        height: 128px;
+        margin-bottom: toRem(40);
+
+        &::placeholder {
+            font-family: $fontFamily;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: $gray-600;
+        }
+    }
+
+    &__text-two {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: $gray-800;
+        position: relative;
+        padding-left: toRem(30);
+
+        &::before {
+            position: absolute;
+            content: "\e908";
+            font-family: "icons";
+            top: 6px;
+            left: 0;
+            border: 1px solid $primary;
+            border-radius: 3px;
+            background: $primary;
+            color: $white;
+            font-size: 8px;
+            width: 16px;
+            height: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 325%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $white;
+        border-radius: 4px;
+        padding: 0px 40px;
+        background: $primary;
+        min-width: 210px;
+    }
+
+    &__column {
+        width: 285px;
+    }
+
+    &__row {
+        display: flex;
+        gap: toRem(135);
+    }
+
+    &__item {
+        display: flex;
+        gap: toRem(30);
+    }
+
+    &-select {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: $gray-800;
+        border: 1px solid $gray-400;
+        border-radius: 4px;
+        background: $gray-200;
+        padding: 13px 16px;
+        width: 100%;
+    }
+
+    &-radio__caption {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-800;
+        margin-bottom: toRem(20);
+    }
+
+    &-radio__content {
+        display: flex;
+        gap: toRem(24);
+    }
+
+    &-radio__span{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-800;
+    }
+}

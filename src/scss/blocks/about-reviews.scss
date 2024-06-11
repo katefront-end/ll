@@ -1,0 +1,45 @@
+.about-reviews {
+    padding-top:toRem(121);
+    padding-bottom: toRem(112);
+
+    &__item {
+        width: 25%;
+        text-align: center;
+    }
+
+    &__row {
+        display: flex;
+        gap: toRem(20);
+
+    }
+
+    &--picture__icon {
+        display: inline-block;
+        color: $gray-600;
+        font-size: toRem(43);
+        font-family: "icons";
+        margin-bottom: toRem(25);
+    }
+
+    &__procent{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(46);
+        line-height: 130%;
+        text-align: center;
+        color: $primary;
+        margin-bottom: toRem(17);
+    }
+
+    &__text{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(14);
+        line-height: 150%;
+        text-align: center;
+        color: $gray-900;
+       max-width: 240px;
+       margin: 0 auto;
+        
+    }
+}

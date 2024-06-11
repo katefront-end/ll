@@ -1,0 +1,101 @@
+.our  {
+  
+    
+    &__text {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(20);
+        line-height: 150%;
+        text-align: center;
+        color: $gray-900;
+        margin-bottom: toRem(8);
+    }
+
+    &__title {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        text-align: center;
+        color: $gray-700;
+        width: toRem(285);
+        margin: 0 auto;
+    }
+
+    &-picture__icon {
+        display: inline-block;
+        color: $primary;
+        font-size: toRem(44);
+        margin-bottom: toRem(24);
+        color: #005aff;
+    }
+
+    &__row {
+        display: flex;
+        text-align: center;
+
+    }
+
+    &__item {
+        width: 33.3333333%;
+        position: relative;
+
+        &:not(:last-child)::after {
+            display: inline-block;
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: url(../../img/our/divider.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: toRem(1);
+            height: 100%;
+
+
+        }
+    }
+
+    &--black{
+        position: relative;
+        background-color: $gray-900;
+        padding: toRem(80) 0 toRem(125);
+    }
+
+    &--white{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(46);
+        line-height: 130%;
+        color: $white;
+    }
+
+    &--red{
+        color: $white;
+    }
+
+    &__link{
+        display: inline-block;
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(16);
+        line-height: 325%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $white;
+        border-radius: 4px;
+        padding: 0px 112px;
+        background: $primary;
+    }
+
+    &__block{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        margin-top: toRem(-24);
+    }
+}

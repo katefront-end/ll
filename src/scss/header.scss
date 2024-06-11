@@ -1,0 +1,172 @@
+.header {
+	
+	padding-top: toRem(36);
+	padding-bottom: toRem(36);
+
+	&.header--absolute{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 100;
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		gap: toRem(60);
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		gap: toRem(40);
+	}
+
+	&__right {
+		display: flex;
+		align-items: center;
+		gap: toRem(40);
+	}
+
+
+	&__link {
+		font-family: $fontFamily;
+		font-weight: 700;
+		font-size: toRem(16);
+		line-height: 160%;
+		color: $gray-800;
+
+		&:hover{
+			color: #005aff;
+		}
+	}
+
+	&__name {
+		font-family: $fontFamily;
+		font-weight: 700;
+		font-size: toRem(14);
+		line-height: 150%;
+		color: $gray-800;
+
+		&:hover{
+			color: #005aff;
+		}
+
+
+
+	}
+
+	&__value {
+		font-family: $fontFamily;
+		font-weight: 400;
+		font-size: toRem(18);
+		line-height: 150%;
+		color: $gray-900;
+
+		&:hover{
+			color: #005aff;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+
+
+	}
+
+	&--tell {
+		padding-left: toRem(43);
+		&::before {
+			position: absolute;
+			content: "\e91c";
+			font-family: "icons";
+			top: toRem(3);
+			left: 0;
+			font-size: toRem(36);
+			color: #005aff;
+		}
+	}
+
+	&--mail {
+		padding-left: toRem(50);
+
+		&::before {
+			position: absolute;
+			content: "\e907";
+			font-family: "icons";
+			top:  toRem(-2);
+			left: 0;
+			font-size: toRem(40);
+			color: #005aff;
+		}
+
+	}
+
+
+	
+
+
+
+}
+
+// //Burger
+// /*
+// .icon-menu {
+// 	display: none;
+// 	@media (max-width: $mobile) {
+// 		display: block;
+// 		position: relative;
+// 		width: toRem(30);
+// 		height: toRem(18);
+// 		z-index: 5;
+// 		@media (any-hover: none) {
+// 			cursor: default;
+// 		}
+// 		span,
+// 		&::before,
+// 		&::after {
+// 			content: "";
+// 			transition: all 0.3s ease 0s;
+// 			right: 0;
+// 			position: absolute;
+// 			width: 100%;
+// 			height: toRem(2);
+// 			background-color: #000;
+// 		}
+// 		&::before {
+// 			top: 0;
+// 		}
+// 		&::after {
+// 			bottom: 0;
+// 		}
+// 		span {
+// 			top: calc(50% - toRem(1));
+// 		}
+// 		.menu-open & {
+// 			span {
+// 				width: 0;
+// 			}
+// 			&::before,
+// 			&::after {
+// 			}
+// 			&::before {
+// 				top: calc(50% - toRem(1));
+// 				transform: rotate(-45deg);
+// 			}
+// 			&::after {
+// 				bottom: calc(50% - toRem(1));
+// 				transform: rotate(45deg);
+// 			}
+// 		}
+// 	}
+// }
+// */

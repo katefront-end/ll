@@ -1,0 +1,26 @@
+.partners {
+    background: $gray-200;
+    padding-top: toRem(80);
+    padding-bottom: toRem(85);
+
+    &__row {
+        display: flex;
+        gap: toRem(102);
+
+    }
+
+    &__item {
+        width: 16.6666666667%;
+    }
+
+    &__img{
+        display: block;
+        max-width: 100%;
+        height: 0 auto;
+    }
+
+    &--work{
+        padding-top: toRem(180);
+        background-color: $white;
+    }
+}

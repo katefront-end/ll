@@ -1,0 +1,135 @@
+.coments{
+
+    &__img{
+        display: block;
+        max-width: 100%;
+        margin-top: -80px;
+        margin-bottom: toRem(80);
+    }
+
+    &__title{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(20);
+        line-height: 150%;
+        color: $gray-900;
+        margin-bottom: toRem(24);
+    }
+
+    &__text{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-800;
+        margin-bottom: toRem(44);
+    }
+
+    &__subtitle{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: $gray-800;
+        margin-bottom: toRem(48);
+    }
+
+    &__mini-subtitle{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: $gray-900;
+        position: relative;
+        padding-left: toRem(60);
+        margin-bottom: toRem(48);
+
+        &::before{
+            font-family: "icons"; 
+            content: "\e903";
+            position: absolute;
+            font-size: toRem(20);
+            color: $primary;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__row{
+         width: 810px;
+         margin: 0 auto;
+    }
+
+    &__title--two{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-800;
+        margin-bottom: toRem(24);
+    }
+
+    &__item{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-800;
+        margin-bottom: toRem(4);
+        position: relative;
+        padding-left: toRem(31);
+
+        &::before{
+            content: "\e909";
+            font-family: "icons"; 
+            position: absolute;
+            font-size: toRem(15);
+            color: $primary;
+            top: 0;
+            left: 0;
+        }
+
+        &:last-child{
+            margin-bottom: toRem(24);
+        }
+    }
+
+    &__text--two{
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-800;
+        margin-bottom: toRem(60);
+    }
+
+    &__subtitle--two{
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: toRem(16);
+        line-height: 160%;
+        color: $gray-900;
+    }
+
+
+    &--picture__icon{
+        font-family: "icons"; 
+        color: $gray-700;
+        font-size: toRem(22);
+
+    }
+
+    &__inner{
+        display: flex;
+        gap: toRem(18);
+        justify-content: center;
+    }
+
+    &__now{
+        display: flex;
+        gap: toRem(12);
+        align-items: center;
+    }
+
+       
+}
