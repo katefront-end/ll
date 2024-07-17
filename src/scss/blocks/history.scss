@@ -1,9 +1,9 @@
-.history{
+.history {
     padding-top: toRem(180);
     padding-bottom: toRem(100);
     background: $gray-200;
 
-    &__title{
+    &__title {
         font-family: $fontFamily;
         font-weight: 700;
         font-size: toRem(46);
@@ -12,42 +12,85 @@
         margin-bottom: toRem(60);
     }
 
-    &__link{
+    &__link {
         font-family: $fontFamily;
         font-weight: 700;
         font-size: toRem(28);
         line-height: 150%;
         color: $gray-600;
-        margin-bottom: toRem(20);
+        padding-left: 32px;
+        position: relative;
 
-        &:hover{
-            color: $primary;
+        &::before {
+            content: '';
+            background-color: currentColor;
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: 10;
+
         }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 3px;
+            transform: translateY(-50%);
+            background-color: #f4f5f6;
+            width: 1px;
+            height: 20px;
+            z-index: 9;
+        }
+
+
     }
 
-    &-nav__btn--active{
+    &-nav__btn--active {
         color: $primary;
     }
 
-    &__top{
+    &__top {
         display: flex;
         justify-content: space-between;
     }
 
-    &__list{
+    &__list {
         grid-column: 4 span;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 3px;
+            background-color: #9A9CA5;
+            width: 1px;
+            height: 100%;
+
+        }
     }
 
-    &__swiper{
-         grid-column: 8 span;
+    &__swiper {
+        grid-column: 8 span;
     }
 
-    &__img{
+    &__img {
         display: block;
-        margin-bottom: toRem(36);
+        margin-bottom: toRem(20);
     }
 
-    &__swiper-text{
+    &__swiper-text {
         font-family: $fontFamily;
         font-weight: 400;
         font-size: 16px;
@@ -55,7 +98,7 @@
         color: $gray-800;
     }
 
-    &__buttons{
+    &__buttons {
         display: flex;
         align-items: center;
     }

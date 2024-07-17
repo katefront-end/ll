@@ -24,7 +24,7 @@ $fontSize: toRem(14); // де 14(px) - розмір шрифту за замов
 
 // Основні кольори
 $mainColor: #000; // Колір шрифту за замовчуванням
-$white: #fff;
+$white: #FFFFFF;
 $primary: #ff5a30;
 $success: #03cea4;
 $danger: #ff4242;
@@ -93,9 +93,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
-	@supports (overflow: clip) {
-		overflow: clip;
-	}
+	min-width: 320px;
+	// @supports (overflow: clip) {
+	// 	overflow: clip;
+	// }
 	// Притискаємо footer
 	> main {
 		flex: 1 1 auto;
@@ -103,7 +104,10 @@ body {
 	// Фікс для слайдерів
 	> * {
 		min-width: 0;
+		
 	}
+
+
 }
 // Обмежуючий контейнер ======================================================================================================================================================================================================================
 /*
@@ -178,7 +182,7 @@ body {
 @import 'blocks/form.scss';
 @import 'blocks/def-home.scss';
 @import 'blocks/design.scss';
-@import 'blocks/interior-offer.scss';
+@import 'blocks/design-offer.scss';
 @import 'blocks/how.scss';
 @import 'blocks/work-nav.scss';
 @import 'blocks/portfolio-work.scss';
@@ -200,6 +204,9 @@ body {
 @import 'blocks/us.scss';
 @import 'blocks/we.scss';
 @import 'blocks/history.scss';
+@import 'blocks/modal.scss';
+@import 'blocks/cv.scss';
+@import 'blocks/price.scss';
 
 // Підключення стилів окремих сторінок
 @import "home";

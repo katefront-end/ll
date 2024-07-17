@@ -42,13 +42,15 @@
     &__inner {
         display: flex;
         align-items: flex-end;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: toRem(24);
     }
 
     &__label {
         display: flex;
         flex-direction: column;
         gap: toRem(8);
+        flex: 1;
 
     }
 
@@ -71,6 +73,72 @@
 
     &__like {
         width: toRem(414);
+        width: 100%;
     }
 
 }
+
+
+@media (max-width: 1200px) {
+    .more-form__input{
+        width: 100%;
+    }
+
+    .more-form__label{
+        width: 49%;
+        flex: none;
+    }
+
+    .more-form__send{
+            width: 49%;
+    }
+
+    .more-form__inner{
+        gap: 0;
+        flex-wrap: wrap;
+        row-gap: toRem(16);
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    .more-form{
+        padding: 20px;
+    }
+  
+  }
+
+  @media (max-width: 620px) {
+    
+   .more-form__title{
+        font-size: toRem(21);
+   }
+
+   .more-form{
+    top: 30px;
+   }
+  
+  }
+
+  @media (max-width: 420px) {
+    
+    .more-form__title{
+            font-size: toRem(16);
+    }
+  
+  }
+
+
+  @media (max-width: 520px) {
+    .more-form__label{
+        width: 100%;
+        flex: none;
+    }
+   
+    .more-form__send{
+        width: 100%;
+}
+   
+   }

@@ -1,5 +1,5 @@
 .design {
-    padding-top:toRem(120);
+    padding-top: toRem(120);
     padding-bottom: toRem(180);
 
     &__row {
@@ -14,7 +14,7 @@
         margin-bottom: toRem(120);
     }
 
-    &__title{
+    &__title {
         font-family: $fontFamily;
         font-weight: 700;
         font-size: toRem(32);
@@ -23,7 +23,7 @@
         margin-bottom: toRem(24);
     }
 
-    &__text{
+    &__text {
         font-family: $fontFamily;
         font-weight: 400;
         font-size: toRem(16);
@@ -32,7 +32,7 @@
         margin-bottom: toRem(48);
     }
 
-    &__link{
+    &__link {
         display: inline-block;
         font-family: $fontFamily;
         font-weight: 700;
@@ -44,7 +44,173 @@
         border: 1px solid $primary;
         border-radius: 4px;
         padding: 0px 32px;
-        
+
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
 }
+
+@media (max-width: 991px) {
+    .design {
+        padding-top: toRem(100);
+        padding-bottom: toRem(160);
+    }
+
+    .design__content {
+
+        gap: toRem(70);
+        margin-bottom: toRem(100);
+    }
+
+    .design__text {
+        font-size: 14px;
+    }
+
+    .design__title {
+        font-size: 28px;
+    }
+
+
+}
+
+
+@media (max-width: 850px) {
+    .design {
+        padding-top: toRem(80);
+        padding-bottom: toRem(140);
+    }
+
+    .design__content {
+        gap: toRem(60);
+        margin-bottom: toRem(80);
+    }
+
+
+    .design__title {
+        font-size: 25px;
+        margin-bottom: toRem(21);
+    }
+
+    .design__text {
+        margin-bottom: toRem(21);
+    }
+
+
+    .design__img {
+        width: 100%;
+    }
+
+    .design__item {
+        width: 100%;
+    }
+
+    .design__content{
+        flex-wrap: wrap;
+
+    }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .design {
+        padding-top: toRem(70);
+        padding-bottom: toRem(120);
+    }
+
+    .design__content {
+        gap: toRem(50);
+        margin-bottom: toRem(70);
+    }
+
+    .design__text {
+        font-size: 13px;
+    }
+
+    .design__title {
+        font-size: 23px;
+    }
+
+
+}
+
+
+@media (max-width: 620px) {
+    .design {
+        padding-top: toRem(60);
+        padding-bottom: toRem(100);
+    }
+
+    .design__content {
+        gap: toRem(40);
+        margin-bottom: toRem(60);
+    }
+
+    .design__text {
+        font-size: 12px;
+
+        margin-bottom: toRem(18);
+
+    }
+
+    .design__title {
+        margin-bottom: toRem(18);
+        font-size: 21px;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .design {
+        padding-top: toRem(50);
+        padding-bottom: toRem(80);
+    }
+
+    .design__content {
+        text-align: center;
+        margin-bottom: toRem(50);
+    }
+
+    .design__text {
+        font-size: 11px;
+
+        margin-bottom: toRem(16);
+
+    }
+
+    .design__title {
+        margin-bottom: toRem(16);
+        font-size: 18px;
+    }
+
+
+
+}
+
+
+@media (max-width: 420px) {
+    .design {
+        padding-top: toRem(40);
+        padding-bottom: toRem(70);
+    }
+
+    .design__content {
+        text-align: center;
+        margin-bottom: toRem(40);
+    }
+
+}
+
+
+
+
+
+
+

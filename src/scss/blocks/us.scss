@@ -121,7 +121,7 @@
     }
 
     &__column {
-        width: 285px;
+        max-width: 285px;
     }
 
     &__row {
@@ -132,6 +132,13 @@
     &__item {
         display: flex;
         gap: toRem(30);
+    }
+
+
+    &__img {
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 
     &-select {
@@ -161,11 +168,115 @@
         gap: toRem(24);
     }
 
-    &-radio__span{
+    &-radio__span {
         font-family: $fontFamily;
         font-weight: 400;
         font-size: toRem(16);
         line-height: 160%;
         color: $gray-800;
     }
+}
+
+@media (max-width: 1246px) {
+    .us__row {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 130px;
+    }
+
+    .us {
+        padding-top: toRem(100);
+        padding-bottom: toRem(100);
+    }
+}
+
+@media (max-width: 991px) {
+    .us {
+        padding-top: toRem(80);
+        padding-bottom: toRem(80);
+    }
+
+    .us__row {
+        gap: 120px;
+    }
+}
+
+@media (max-width: 850px) {
+    .us {
+        padding-top: toRem(60);
+        padding-bottom: toRem(60);
+    }
+
+    .us__row {
+        gap: 100px;
+    }
+
+    .us__subtitle{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .us {
+        padding-top: toRem(40);
+        padding-bottom: toRem(40);
+    }
+
+    .us__row {
+        gap: 80px;
+    }
+
+    .us__textarea{
+        margin-bottom: 30px;
+    }
+
+    .us__subtitle{
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+
+    .us__title{
+        font-size: 36px;
+    }
+
+    
+}
+
+@media (max-width: 620px) {
+    .us {
+        padding-top: toRem(30);
+        padding-bottom: toRem(30);
+    }
+
+    .us__row {
+        gap: 60px;
+    }
+
+    .us__textarea{
+        margin-bottom: 20px;
+    }
+
+    .us__subtitle{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 520px) {
+   .us__item{
+    display: flex;
+   flex-direction: column;
+   }
+
+   .us__input{
+    margin-bottom: 16px;
+   }
+
+   .us__textarea{
+    margin-bottom: 14px;
+}
+
+.us__subtitle{
+    margin-bottom: 20px;
+}
 }

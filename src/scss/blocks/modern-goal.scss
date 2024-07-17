@@ -19,18 +19,15 @@
         color: $gray-800;
         margin-bottom: toRem(40);
 
-        &:last-child{
+        &:last-child {
             margin: 0;
         }
-
     }
 
     &__row {
         display: flex;
         gap: toRem(135);
-
     }
-
 
     &__left {
         width: 600px;
@@ -44,7 +41,7 @@
         padding: 40px 60px;
     }
 
-    &__name{
+    &__name {
         font-family: $fontFamily;
         font-weight: 700;
         font-size: toRem(16);
@@ -52,23 +49,144 @@
         color: $gray-900;
     }
 
-    &__item{
+    &__item {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: toRem(16);
+        gap: 8px;
 
-        &:last-child{
+        &:last-child {
             margin: 0;
         }
     }
 
-    &__value{
+    &__value {
         font-family: $fontFamily;
         font-weight: 400;
         font-size: toRem(16);
         line-height: 160%;
         color: $gray-700;
         min-width: 250px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .modern-goal {
+        padding-top: toRem(90);
+        padding-bottom: toRem(110);
+    }
+
+    .modern-goal__row {
+        gap: 125px;
+    }
+}
+
+@media (max-width: 991px) {
+    .modern-goal__row {
+        flex-wrap: wrap;
+    }
+
+    .modern-goal__left {
+        width: 100%;
+    }
+
+    .modern-goal__right {
+        width: 100%;
+    }
+
+    .modern-goal {
+        padding-top: toRem(80);
+        padding-bottom: toRem(100);
+    }
+
+    .modern-goal__row {
+        gap: 115px;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .modern-goal {
+        padding-top: toRem(70);
+        padding-bottom: toRem(105);
+    }
+
+    .modern-goal__row {
+        gap: 105px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .modern-goal {
+        padding-top: toRem(60);
+        padding-bottom: toRem(95);
+    }
+
+    .modern-goal__row {
+        gap: 95px;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .modern-goal {
+        padding-top: toRem(50);
+        padding-bottom: toRem(85);
+    }
+
+    .modern-goal__row {
+        gap: 85px;
+    }
+}
+
+@media (max-width: 520px) {
+    .modern-goal__row {
+        flex-wrap: wrap !important;
+       
+    }
+
+    .modern-goal {
+        padding-top: toRem(40);
+        padding-bottom: toRem(75);
+    }
+
+    .modern-goal__row {
+        gap: 75px;
+    }
+
+    .modern-goal__right{
+            padding: 8px 8px;
+    }
+
+    .modern-goal__item{
+            flex-wrap: wrap;
+    }
+
+    .modern-goal__name{
+            width: 100%;
+    }
+
+    .modern-goal__value{
+            width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .modern-goal {
+        padding-top: toRem(30);
+        padding-bottom: toRem(30);
+    }
+
+    .modern-goal__row {
+        gap: 65px;
+    }
+
+    .modern-goal__item{
+            flex-wrap: wrap;
     }
 }

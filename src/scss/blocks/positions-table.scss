@@ -91,11 +91,12 @@
         line-height: 150%;
         color: $gray-900;
         margin-bottom: toRem(24);
+     
     }
 
     &__text{
         font-family: $fontFamily;
-        font-weight: 400;
+        font-weight: 700;
         font-size: toRem(18);
         line-height: 150%;
         color: $gray-800;
@@ -157,6 +158,21 @@
         border-radius: 4px;
         padding: 0px 40px;
         margin-right:toRem(30) ;
+
+        &:hover{
+            font-family: $fontFamily;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 325%;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            text-align: center;
+            color: $white;
+            background: $primary;
+            border-radius: 4px;
+            padding: 0px 40px;
+           
+        }
         
     }
 
@@ -173,11 +189,26 @@
         border-radius: 4px;
         padding: 0px 40px;
         background-color: $primary;
+
+        &:hover{
+            font-family: $fontFamily;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 325%;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            text-align: center;
+            color: $primary;
+            background: $white;
+            border: 1px solid $primary;
+            border-radius: 4px;
+            padding: 0px 40px;
+        }
        
     }
 
     &__inner{
-         width: 390px;
+        max-width: 390px;
     }
 
     &__span{
@@ -185,3 +216,157 @@
     }
 
 }
+
+
+@media (max-width: 1200px) {
+
+    .positions-table__row{
+        flex-wrap: wrap;
+        gap: toRem(125);
+        justify-content: center;
+    }
+
+  .positions-table{
+    padding-top: toRem(110);
+    padding-bottom: toRem(160);
+  }
+
+
+
+}
+
+
+
+@media (max-width: 991px) {
+
+  .positions-table{
+    padding-top: toRem(90);
+    padding-bottom: toRem(140);
+  }
+
+  .positions-table__row{
+  
+    gap: toRem(105);
+    
+}
+
+}
+
+
+@media (max-width: 850px) {
+
+    .positions-table{
+      padding-top: toRem(80);
+      padding-bottom: toRem(120);
+    }
+
+    .positions-table__row{
+  
+        gap: toRem(90);
+        
+    }
+  
+  }
+
+  @media (max-width: 768px) {
+
+    .positions-table{
+      padding-top: toRem(70);
+      padding-bottom: toRem(100);
+    }
+
+    .positions-table__row{
+  
+        gap: toRem(80);
+        
+    }
+  
+  }
+
+  @media (max-width: 620px) {
+
+    .positions-table{
+      padding-top: toRem(60);
+      padding-bottom: toRem(80);
+    }
+
+    .positions-table__row{
+  
+        gap: toRem(70);
+        
+    }
+
+    .positions-table__content{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 21px;
+    }
+  
+    .positions-table__link{
+            width: 100%;
+    }
+    .positions-table__item{
+        flex-wrap: wrap;
+    }
+
+    .positions-table__top{
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 520px) {
+
+    .positions-table{
+      padding-top: toRem(50);
+      padding-bottom: toRem(60);
+    }
+
+    .positions-table__row{
+  
+        gap: toRem(60);
+        
+    }
+
+    .positions-table__title{
+        font-size: 21px;
+  
+    }
+
+    .positions-table__subtitle{
+        font-size: 14px;
+    }
+  
+  }
+
+
+  @media (max-width: 420px) {
+
+    .positions-table{
+      padding-top: toRem(40);
+      padding-bottom: toRem(50);
+    }
+
+    .positions-table__row{
+  
+        gap: toRem(50);
+        
+    }
+
+    .positions-table__errow{
+        width: 100%;
+        margin-bottom: 21px;
+    }
+
+    .positions-table__btn{
+        width: 100%;
+    }
+
+   .positions-table__item{
+    padding: 25px 30px;
+   }
+
+   .positions-table__text{
+    font-size: 17px;
+   }
+  
+  }

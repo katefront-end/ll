@@ -78,3 +78,53 @@
         }
     }
 }
+
+@media (max-width: 991px) {
+    .room__item{
+        width: 50%;
+        margin-bottom: 21px;
+    }
+
+    .room__row{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   }
+
+
+@media (max-width: 620px) {
+    .room__item{
+        width: 100%;
+       
+    }
+
+    .room__item:not(:last-child)::after{
+            display: none;
+    }
+    .room{
+        padding-bottom: toRem(100);
+    }
+
+    .room__title{
+        font-size: 36px;
+    }
+   }
+
+
+   @media (max-width: 520px) {
+
+    .room{
+        padding-bottom: toRem(80);
+    }
+    .room__title{
+        font-size: 32px;
+    }
+   }
+
+   @media (max-width: 420px) {
+
+    .room{
+        padding-bottom: toRem(50);
+    }
+   }
+

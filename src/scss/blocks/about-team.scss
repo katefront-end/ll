@@ -41,14 +41,15 @@
     }
 
     &__content {
-        padding: 16px 0 60px 0;
+        padding: 16px 5px;
+
     }
 
     &__item {
-        padding: 0 toRem(15) 0 toRem(15);
+        padding: 0 15px;
         width: 25%;
 
-        &:hover .about-team__social{
+        &:hover .about-team__social {
             opacity: 1;
             transform: translateY(0);
         }
@@ -57,7 +58,8 @@
     &__row {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 toRem(-15) 0 toRem(-15);
+        margin: 0 -15px;
+        row-gap: 60px;
 
     }
 
@@ -100,14 +102,121 @@
     }
 
     &__btn {
-        font-family: "icons"; 
+        font-family: "icons";
         font-size: 18px;
         margin-left: 13px;
         color: $white;
     }
 
-    &__photo{
+    &__photo {
         position: relative;
 
     }
+
+    &__img {
+        display: flex;
+        max-width: 100%;
+        height: auto;
+    }
 }
+
+
+@media (max-width: 1200px) {
+    .about-team{
+        padding-top: toRem(160);
+        padding-bottom: toRem(100);
+    }
+
+    .about-team__row{
+        margin-bottom: 21px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .about-team{
+        padding-top: toRem(140);
+        padding-bottom: toRem(80);
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .about-team__img {
+        width: 100%;
+    }
+
+    .about-team__item {
+        width: 50%;
+    }
+
+    .about-team{
+        padding-top: toRem(120);
+        padding-bottom: toRem(60);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+        .about-team{
+        padding-top: toRem(100);
+        padding-bottom: toRem(50);
+    }
+
+}
+
+
+@media (max-width: 620px) {
+
+    .about-team__title {
+        font-size: toRem(30);
+    }
+
+    .about-team{
+        padding-top: toRem(80);
+        padding-bottom: toRem(40);
+    }
+
+}
+
+@media (max-width: 520px) {
+
+    
+
+    .about-team{
+        padding-top: toRem(60);
+        padding-bottom: toRem(30);
+    }
+
+    .about-team__subtitle{
+        font-size: 18px;
+    }
+
+    .about-team__text--two{
+        font-size: 14px;
+    }
+
+    .about-team__item {
+        width:  100%;
+    }
+}
+
+
+
+@media (max-width: 420px) {
+
+    
+
+    .about-team{
+        padding-top: toRem(40);
+        padding-bottom: toRem(10);
+    }
+
+  
+
+}
+
+
+

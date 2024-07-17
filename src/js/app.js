@@ -36,7 +36,7 @@ flsFunctions.isWebp();
 /* Додавання loaded для HTML після повного завантаження сторінки */
 // flsFunctions.addLoadedClass();
 /* Модуль для роботи з меню (Бургер) */
-// flsFunctions.menuInit();
+flsFunctions.menuInit();
 /* Враховування плаваючої панелі на мобільних пристроях при 100vh */
 // flsFunctions.fullVHfix();
 /* Форматування чисел */
@@ -89,7 +89,7 @@ flsFunctions.isWebp();
 Документація: https://template.fls.guru/template-docs/funkcional-popup.html
 Сніппет (HTML): pl, pop
 */
-// import './libs/popup.js'
+import './libs/popup.js'
 
 /*
 Модуль паралаксу мишею

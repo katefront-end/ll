@@ -1,3 +1,56 @@
+// document.addEventListener('DOMContentLoaded', function () {
+// 	const accordionItems = document.querySelectorAll('.accordion-item');
+
+// 	accordionItems.forEach((item, index) => {
+// 		item.addEventListener('click', () => {
+// 			const content = item.querySelector('.accordion-content');
+
+// 			if (content.classList.contains('active')) {
+// 				content.classList.remove('active');
+// 				item.classList.remove('active');
+// 			} else {
+// 				content.classList.add('active');
+// 				item.classList.add('active');
+// 			}
+// 		});
+
+// 		// Open the first item by default
+// 		if (index === 0) {
+// 			item.querySelector('.accordion-content').classList.add('active');
+// 			item.classList.add('active');
+// 		}
+// 	});
+// });
+
+const circles = document.querySelectorAll('.facts-element__circle');
+circles.forEach(el => {
+
+	if (el.dataset.percentage == 'true') {
+		let progress = el.querySelector('.progress');
+		let valueBlock = el.querySelector('.facts-element__value');
+		let radius = progress.getAttribute('r');
+		let circleLength = 2 * Math.PI * radius;
+		let full = el.dataset.full;
+		let value = el.dataset.value;
+		let percentageProgress = Math.floor(value / full * 100);
+		valueBlock.textContent = value;
+		progress.setAttribute('stroke-dasharray', circleLength);
+		progress.setAttribute('stroke-dashoffset', circleLength - circleLength * percentageProgress / 100);
+	} else {
+		let progress = el.querySelector('.progress');
+		let valueBlock = el.querySelector('.facts-element__value');
+		let radius = progress.getAttribute('r');
+		let circleLength = 2 * Math.PI * radius;
+		let percent = el.dataset.percent;
+		let percentageProgress = Math.floor(percent);
+		valueBlock.textContent = percent + '%';
+		progress.setAttribute('stroke-dasharray', circleLength);
+		progress.setAttribute('stroke-dashoffset', circleLength - circleLength * percentageProgress / 100);
+	}
+
+});
+
+
 /*
 Документація по роботі у шаблоні: 
 Документація слайдера: https://swiperjs.com/
@@ -8,7 +61,7 @@
 // При необхідності підключаємо додаткові модулі слайдера, вказуючи їх у {} через кому
 // Приклад: { Navigation, Autoplay }
 import Swiper from 'swiper';
-import { Navigation, Thumbs } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination, Thumbs } from 'swiper/modules';
 
 /*
 Основні модулі слайдера:
@@ -27,9 +80,42 @@ import "../../scss/base/swiper.scss";
 
 // Ініціалізація слайдерів
 function initSliders() {
+
+	const homeSwiper = document.querySelector('.home__swiper')
+
+	if (homeSwiper) {
+		new Swiper(homeSwiper, {
+
+			modules: [Navigation, Pagination, Autoplay],
+			navigation: {
+				nextEl: ".home__arrow-right",
+				prevEl: ".home__arrow-left",
+			},
+			speed: 600,
+
+			autoplay: {
+				delay: 7000,
+			},
+
+			pagination: {
+				el: ".home__pag",
+			},
+
+			on: {
+				init: function () {
+					const pag = document.querySelectorAll('.swiper-pagination-bullet')
+
+					pag.forEach(el => {
+						el.innerHTML = '<span class="home__line"></span>'
+					})
+				}
+			}
+		});
+	}
+
 	// Список слайдерів
 	// Перевіряємо, чи є слайдер на сторінці
-	const historySlider = document.querySelector('history__swiper')
+	const historySlider = document.querySelector('.history__swiper')
 
 	if (historySlider) {
 		const mainModern = new Swiper(historySlider, {
@@ -97,13 +183,26 @@ function initSliders() {
 
 			modules: [Navigation],
 
-			slidesPerView: 3,
+			slidesPerView: 1,
 			slidesPerGroup: 1,
-			spaceBetween: 30,
+			spaceBetween: 20,
 			//autoHeight: true,
 			speed: 1800,
 
 
+
+			breakpoints: {
+
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+				},
+
+			},
 
 
 
@@ -154,28 +253,10 @@ function initSliders() {
 				prevEl: '.works-button__left',
 				nextEl: '.works-button__right',
 			},
-			/*
-			// Брейкпоінти
-			breakpoints: {
-				640: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
-				},
-				768: {
-					slidesPerView: 2,
-					spaceBetween: 20,
-				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				},
-			},
-			*/
+
+
+
+
 			// Події
 			on: {
 

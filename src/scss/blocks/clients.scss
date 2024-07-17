@@ -5,7 +5,7 @@
 
     &__container{
         display: flex;
-        gap: toRem(135);
+       justify-content: space-between;
     }
 
     &__text{
@@ -27,7 +27,7 @@
     }
 
     &-swiper{
-        width: toRem(600) !important;
+        
         position: relative;
     }
 
@@ -58,4 +58,84 @@
     &__logo{
         margin-bottom: toRem(24);
     }
+
+    &__content{
+        max-width: 600px;
+    }
 }
+
+@media (max-width: 1120px) {
+
+    .clients__img{
+    width: 360px;
+
+    }
+}
+
+@media (max-width: 991px) {
+
+    .clients__img{
+    width: 300px;
+    object-fit: cover;
+
+    }
+
+    .clients{
+        padding-top: toRem(85);
+    }
+}
+
+@media (max-width: 914px) {
+
+  .clients__img{
+    display: none;
+  }
+
+  
+  .clients__content{
+    max-width: 100%;
+  }
+
+  .clients{
+    padding-top: toRem(75);
+    padding-bottom: 60px;
+}
+
+}
+
+
+@media (max-width: 850px) {
+    
+    .clients{
+      padding-top: toRem(65);
+  }
+  
+  }
+
+
+
+@media (max-width: 768px) {
+    
+    .clients{
+      padding-top: toRem(55);
+  }
+  
+  }
+
+
+@media (max-width: 620px) {
+    
+    .clients{
+      padding-top: toRem(45);
+  }
+  
+  }
+
+
+@media (max-width: 520px) {
+    
+    .clients{
+      padding-top: toRem(35);
+  }
+  
+  }

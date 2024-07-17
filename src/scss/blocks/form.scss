@@ -133,3 +133,24 @@
         color: $white;
     }
 }
+
+@media (max-width: 620px) {
+    .form__container{
+            display: flex;
+            justify-content: center;
+    }
+
+    .form{
+        padding: toRem(70) 0 ;
+    }
+ }
+
+ @media (max-width: 520px) {
+    .form__title{
+            font-size: 21px;
+    }
+
+    .form{
+        padding: toRem(60) 0 ;
+    }
+ }

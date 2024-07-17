@@ -41,6 +41,7 @@
 
     &__together{
         display: flex;
+        align-items:center ;
         justify-content: space-between;
     }
 
@@ -51,3 +52,32 @@
 
     
 }
+
+@media (max-width: 420px) {
+   .dev-home__content{
+        gap: 8px;
+        display: flex;
+        margin-bottom: 8px;
+   }
+   .dev-home__span{
+    margin: 0 8px 0;
+    display: none;
+   }
+
+   .dev-home__coment{
+    padding-left: 0;
+    font-size: 14px;
+   }
+ 
+   .dev-home--coment::before{
+        display: none;
+   }
+
+   .dev-home__link{
+    font-size: 14px;
+   }
+
+   .dev-home--coment{
+        padding-left: 0;
+   }
+   }

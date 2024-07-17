@@ -12,8 +12,10 @@
     line-height: 130%;
     color: $gray-900;
     margin-bottom: toRem(24);
-  
+
 }
+
+
 
 .main-text {
     font-family: $fontFamily;
@@ -62,7 +64,7 @@
     color: $gray-800;
     font-size: toRem(13);
 
-    &:hover{
+    &:hover {
         background-color: $primary;
         color: $white;
         border-radius: 50%;
@@ -76,48 +78,137 @@
     }
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 30px;
 }
 
-.dev-home{
+.dev-home {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: $gray-200;
 
-    &.services--home{
+    &.services--home {
         background-image: url(../img/dev-home/background.png);
-        
+
     }
 
-    &.interior--home{
+    &.interior--home {
         background-image: url(../img/interior/background.png);
     }
 
-    &.work--home{
+    &.work--home {
         background-image: url(../img/work/background.png);
     }
 
-    &.about-home{
+    &.about-home {
         background-image: url(../img/about/background.png);
     }
-    &.modern--home{
+
+    &.modern--home {
         height: auto;
         padding: 80px 0 100px;
     }
 
-    &.positions-home{
+    &.positions-home {
         background-image: url(../img/positions/background.png);
     }
 
-    &.news-home{
+    &.news-home {
         background-image: url(../img/news/background.png);
     }
 
-    &.contact-home{
+    &.contact-home {
         background-image: url(../img/contact/background.png);
     }
+
+   
+}
+
+
+@media (max-width: 991px) {
+    .main-title {
+        font-size: toRem(45);
+    }
+}
+
+
+@media (max-width: 850px) {
+    .main-title {
+        font-size: toRem(35);
+    }
+
+    .main-text {
+        font-size: toRem(18);
+    }
+
+    .main-top {
+        margin-bottom: toRem(30);
+    }
+
+    .main-title{
+        margin-bottom: toRem(16);
+    }
+}
+
+@media (max-width: 520px) {
+    .main-title {
+        font-size: toRem(25);
+    }
+
+    .main-text {
+        font-size: toRem(14);
+    }
+}
+
+
+@media (max-width: 768px) {
+  
+
+    .default-info__title{
+     font-size: 21px;
+    }
+    
+    .default-info__btn{
+        padding: 0px 30px;
+    }
+     
+}
+
+
+
+@media (max-width: 620px) {
+  
+
+    .default-info__title{
+     font-size: 18px;
+    }
+    
+    .default-info__btn{
+        padding: 0px 17px;
+    }
+     
+}
+
+
+@media (max-width: 420px) {
+  
+
+   
+    
+    .default-info__btn{
+        padding: 0px 15px;
+        font-size: toRem(16);
+    }
+     
+
+  
+    .default-info{
+            flex-wrap: wrap;
+    }
+
+
+     
 }

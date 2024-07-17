@@ -17,7 +17,7 @@
         margin-bottom: toRem(60);
     }
 
- 
+
 
     &__item {
         font-family: $fontFamily;
@@ -29,29 +29,133 @@
         text-align: left;
         position: relative;
         padding-left: toRem(36);
-    
+
 
         &:last-child {
             margin: 0;
         }
 
 
-        &::before{
+        &::before {
             content: "\e909";
-            font-family: "icons"; 
+            font-family: "icons";
             font-size: toRem(20);
             color: $primary;
             position: absolute;
             top: 0;
             left: 0;
         }
-       
+
     }
 
-    &__img{
+    &__img {
         display: block;
         max-width: 100%;
         margin-bottom: -60px;
     }
 
 }
+
+@media (max-width: 1200px) {
+    .modern-points__row {
+        gap: toRem(125);
+    }
+    .modern-points{
+        padding-top: toRem(70);
+    }
+
+    .modern-points__title{
+        font-size: toRem(36);
+        margin-bottom: toRem(50);
+    }
+}
+
+@media (max-width: 991px) {
+    .modern-points__row {
+        gap: toRem(115);
+    }
+
+    .modern-points{
+        padding-top: toRem(60);
+    }
+
+    .modern-points__row{
+            flex-wrap: wrap;
+    }
+
+    .modern-points__title{
+        font-size: toRem(30);
+        margin-bottom: toRem(40);
+    }
+
+    .modern-points__content{
+            margin: 0 auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .modern-points__row {
+        gap: toRem(105);
+    }
+
+    .modern-points__title{
+        font-size: 26px;
+        margin-bottom: toRem(30);
+    }
+
+    .modern-points{
+        padding-top: toRem(50);
+    }
+
+}
+
+@media (max-width: 768px) {
+    .modern-points__row {
+        gap: toRem(95);
+    }
+
+    .modern-points{
+        padding-top: toRem(40);
+    }
+
+    .modern-points__title{
+   
+        margin-bottom: toRem(20);
+    }
+
+
+}
+
+@media (max-width: 620px) {
+    .modern-points__row {
+        gap: toRem(85);
+    }
+
+    .modern-points{
+        padding-top: toRem(30);
+    }
+
+}
+
+@media (max-width: 520px) {
+    .modern-points__row {
+        gap: toRem(75);
+    }
+
+    .modern-points{
+        padding-top: toRem(20);
+    }
+
+}
+
+@media (max-width: 420px) {
+    .modern-points__row {
+        gap: toRem(65);
+    }
+
+    .modern-points{
+        padding-top: toRem(10);
+    }
+
+}
+

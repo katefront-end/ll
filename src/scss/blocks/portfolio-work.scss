@@ -12,10 +12,16 @@
     &__item {
         width: 33.3333333%;
         padding: 0 toRem(15) 0 toRem(15);
-       
+        display: flex;
+        flex-direction: column;
+
     }
 
-    &__title{
+    &__img{
+            flex: 1;
+    }
+
+    &__title {
         font-family: $fontFamily;
         font-weight: 700;
         font-size: toRem(20);
@@ -25,7 +31,7 @@
         text-align: center;
     }
 
-    &__text{
+    &__text {
         font-family: $fontFamily;
         font-weight: 400;
         font-size: toRem(14);
@@ -34,7 +40,7 @@
         text-align: center;
     }
 
-    &__content{
+    &__content {
         box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
         background: $white;
         padding: toRem(16) toRem(20) toRem(24);
@@ -42,4 +48,111 @@
 
 
     }
+
+    
+    &__img{
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
+
+
+
+
+@media (max-width: 1200px) {
+
+    .portfolio-work {
+        padding-top: toRem(110);
+        padding-bottom: toRem(90);
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+    .portfolio-work__item {
+        width: 50%;
+    
+
+    }
+
+    .portfolio-work {
+        padding-top: toRem(100);
+        padding-bottom: toRem(80);
+    }
+
+    .portfolio-work__item:last-child {
+        margin: 0 auto;
+    }
+
+    .portfolio-work__img{
+            width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .portfolio-work {
+        padding-top: toRem(90);
+        padding-bottom: toRem(70);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .portfolio-work {
+        padding-top: toRem(80);
+        padding-bottom: toRem(60);
+    }
+
+
+
+
+}
+
+
+
+@media (max-width: 620px) {
+
+    .portfolio-work {
+        padding-top: toRem(70);
+        padding-bottom: toRem(50);
+    }
+
+   
+
+    .portfolio-work__title{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .portfolio-work {
+        padding-top: toRem(60);
+        padding-bottom: toRem(40);
+    }
+
+   
+    .portfolio-work__item {
+        width: 100%;
+     
+
+    }
+}
+
+@media (max-width: 420px) {
+
+    .portfolio-work {
+        padding-top: toRem(50);
+        padding-bottom: toRem(30);
+    }
+
+    .portfolio-work__title{
+        font-size: 15px;
+    }
+}
+

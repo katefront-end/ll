@@ -35,11 +35,11 @@
    }
 
    &-left{
-        width: 150px;
+        width: 100%;
    }
 
    &-right{
-    width: 630px;
+   max-width: 630px;
    }
 
    &-text{
@@ -79,4 +79,24 @@
         left: 0;
     }
    }
+}
+
+
+
+
+@media (max-width: 520px) {
+    .coments__bottom{
+        padding-top: 55px;   
+    }
+
+    .coments__bottom-item{
+            flex-wrap: wrap;
+            justify-content: center;
+
+    }
+
+  .coments__bottom-title{
+    font-size: 30px;
+  }
+
 }

@@ -8,22 +8,103 @@
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
 		<main class="page">
+
 			<div class="home">
-				<div class="home__container">
-					<div class="home__row">
-						<div class="home__title">
-							TRAVEL
+				<div class="home__swiper swiper">
+
+					<button class="home__arrow home__arrow-left  _icon-arrow" type="button">
+
+					</button>
+					<button class="home__arrow home__arrow-right _icon-arrow" type="button">
+					</button>
+					<div class="home__pag swiper-pagination">
+
+					</div>
+
+					<div class="home-wrapper swiper-wrapper">
+						<div class="home-slide swiper-slide">
+							<div class="home__main">
+								<div class="home__container">
+									<div class="home__row">
+										<div class="home__title">
+											TRAVEL
+										</div>
+										<div class="home__text">
+											Travel with us, with our help you can fly to another part of the world, go
+											to the website or
+											read below where it says “Help”
+										</div>
+										<div class="home__content">
+											<a href="#" class="home__link">Learn more about us</a>
+											<a href="#" class="home__btn">CLICK</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="home__text">
-							Travel with us, with our help you can fly to another part of the world, go to the website or
-							read below where it says “Help”
+						<div class="home-slide swiper-slide">
+							<div class="home__main">
+								<div class="home__container">
+									<div class="home__row">
+										<div class="home__title">
+											TRAVEL
+										</div>
+										<div class="home__text">
+											Travel with us, with our help you can fly to another part of the world, go
+											to the website or
+											read below where it says “Help”
+										</div>
+										<div class="home__content">
+											<a href="#" class="home__link">Learn more about us</a>
+											<a href="#" class="home__btn">CLICK</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="home__content">
-							<a href="#" class="home__link">Learn more about us</a>
-							<a href="#" class="home__btn">CLICK</a>
+						<div class="home-slide swiper-slide">
+							<div class="home__main">
+								<div class="home__container">
+									<div class="home__row">
+										<div class="home__title">
+											TRAVEL
+										</div>
+										<div class="home__text">
+											Travel with us, with our help you can fly to another part of the world, go
+											to the website or
+											read below where it says “Help”
+										</div>
+										<div class="home__content">
+											<a href="#" class="home__link">Learn more about us</a>
+											<a href="#" class="home__btn">CLICK</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="home-slide swiper-slide">
+							<div class="home__main">
+								<div class="home__container">
+									<div class="home__row">
+										<div class="home__title">
+											TRAVEL
+										</div>
+										<div class="home__text">
+											Travel with us, with our help you can fly to another part of the world, go
+											to the website or
+											read below where it says “Help”
+										</div>
+										<div class="home__content">
+											<a href="#" class="home__link">Learn more about us</a>
+											<a href="#" class="home__btn">CLICK</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
 			<div class="video">
 				<div class="video__container">
@@ -152,7 +233,7 @@
 						</div>
 
 					</div>
-					<div class="default-info">
+					<div class="default-info our-services__wow">
 						<div class="default-info__title">
 							Learn more about our services
 						</div>
@@ -264,13 +345,9 @@
 									</div>
 								</div>
 							</div>
-
-
-
-
 						</div>
 					</div>
-					<div class="default-info default-info--works">
+					<div class="default-info default-info--works ">
 						<div class="default-info__title">
 							Explore all our works
 						</div>
@@ -390,42 +467,81 @@
 				</div>
 			</div>
 
-			<div class="some">
-				<div class="some__container">
+			<section class="facts">
+				<div class="container">
 					<div class="main-top">
-						<div class="main-title">
-							Some facts and figures
-						</div>
+						<h2 class="main-title facts__title">Some facts and figures</h2>
 					</div>
-					<div class="some__row">
-						<div class="some__item">
-							<img src="img/some/circle-progress.png" alt="" class="some__img">
-							<div class="some__text">
-								Totally satisfied clients
+					<ul class="list-reset facts__list">
+						<li class="facts__item">
+							<div class="facts-element">
+								<div class="facts-element__circle facts-element__circle--one-color" data-percent="57">
+									<svg class="circle-anim" viewBox="-10 -10 320 320">
+										<circle class="progress-bg" r="150" cx="150" cy="150" fill="none"
+											stroke-width="15">
+										</circle>
+										<circle class="progress" r="150" cx="150" cy="150" fill="none"
+											stroke-width="15">
+										</circle>
+									</svg>
+									<div class="facts-element__value">98%</div>
+								</div>
+								<span class="facts-element__text">Totally satisfied clients</span>
 							</div>
-						</div>
-						<div class="some__item">
-							<img src="img/some/circle-progress-2.png" alt="" class="some__img">
-							<div class="some__text">
-								Years of experience
+						</li>
+						<li class="facts__item">
+							<div class="facts-element">
+								<div class="facts-element__circle facts-element__circle--two-color"
+									data-percentage="true" data-full="50" data-value="35">
+									<svg class="circle-anim" viewBox="-10 -10 320 320">
+										<circle class="progress-bg" r="150" cx="150" cy="150" fill="none"
+											stroke="yellow" stroke-width="15">
+										</circle>
+										<circle class="progress" r="150" cx="150" cy="150" fill="none" stroke="crimson"
+											stroke-width="15">
+										</circle>
+									</svg>
+									<div class="facts-element__value">98%</div>
+								</div>
+								<span class="facts-element__text">Years of experience</span>
 							</div>
-						</div>
-						<div class="some__item">
-							<img src="img/some/circle-progress-3.png" alt="" class="some__img">
-							<div class="some__text">
-								Working hours spent
+						</li>
+						<li class="facts__item">
+							<div class="facts-element">
+								<div class="facts-element__circle facts-element__circle--three-color"
+									data-percentage="true" data-full="10000" data-value="9452">
+									<svg class="circle-anim" viewBox="-10 -10 320 320">
+										<circle class="progress-bg" r="150" cx="150" cy="150" fill="none"
+											stroke="yellow" stroke-width="15">
+										</circle>
+										<circle class="progress" r="150" cx="150" cy="150" fill="none" stroke="crimson"
+											stroke-width="15">
+										</circle>
+									</svg>
+									<div class="facts-element__value">98%</div>
+								</div>
+								<span class="facts-element__text">Working hours spent</span>
 							</div>
-						</div>
-						<div class="some__item">
-							<img src="img/some/circle-progress-2.png" alt="" class="some__img">
-							<div class="some__text">
-								Succeeded projects
+						</li>
+						<li class="facts__item">
+							<div class="facts-element">
+								<div class="facts-element__circle facts-element__circle--four-color" data-percent="100">
+									<svg class="circle-anim" viewBox="-10 -10 320 320">
+										<circle class="progress-bg" r="150" cx="150" cy="150" fill="none"
+											stroke="yellow" stroke-width="15">
+										</circle>
+										<circle class="progress" r="150" cx="150" cy="150" fill="none" stroke="crimson"
+											stroke-width="15">
+										</circle>
+									</svg>
+									<div class="facts-element__value">98%</div>
+								</div>
+								<span class="facts-element__text">Succeeded projects</span>
 							</div>
-						</div>
-
-					</div>
+						</li>
+					</ul>
 				</div>
-			</div>
+			</section>
 
 			<div class="recent">
 				<div class="recent__container">
@@ -486,7 +602,7 @@
 						</div>
 
 					</div>
-					<div class="default-info recent__ghy">
+					<div class="default-info recent__wow">
 						<div class="default-info__title">
 							Explore all our news posts
 						</div>

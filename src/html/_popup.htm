@@ -1,10 +1,87 @@
 <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрити</button>
-			<div class="popup__text">
-				Text
+			<button data-close type="button" class="popup__close">
+				<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797"
+						stroke-linecap="square" />
+					<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797"
+						stroke-linecap="square" />
+				</svg>
+			</button>
+
+			<div class="modal__title">
+				Subscribe to our newsletter
 			</div>
+			<from class="modal__from">
+				<div class="modal__item">
+					<div class="modal__name">
+						Name
+					</div>
+					<input type="text" class="modal__input" placeholder="Your name">
+				</div>
+				<div class="modal__item">
+					<div class="modal__name">
+						Email
+					</div>
+					<input type="email" class="modal__input--two" placeholder="Your working email">
+				</div>
+				<button class="modal__btn" type="button">send</button>
+			</from>
+		</div>
+	</div>
+</div>
+
+<div id="popup-send" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content popup--send">
+			<button data-close type="button" class="popup__close">
+				<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797"
+						stroke-linecap="square" />
+					<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797"
+						stroke-linecap="square" />
+				</svg>
+			</button>
+			<div class="cv__title">
+				Send your CV
+			</div>
+			<from class="cv__from">
+				<div class="cv__item">
+					<div class="cv__name">
+						Name*
+					</div>
+					<input type="text" class="cv__input" placeholder="Your name">
+				</div>
+				<div class="cv__item">
+					<div class="modal__name">
+						Location*
+					</div>
+					<input type="email" class="cv__input--two" placeholder="Choose your location">
+				</div>
+				<div class="cv__item">
+					<div class="cv__name">
+						Phone*
+					</div>
+					<input type="email" class="cv__input--two" placeholder="Your phone number">
+				</div>
+				<div class="cv__item">
+					<div class="cv__name">
+						Email*
+					</div>
+					<input type="email" class="cv__input--two" placeholder="Your working email">
+				</div>
+				<div class="cv__item">
+					<div class="cv__name">
+						Сovering letter
+					</div>
+					<textarea class="cv__textarea" placeholder="Your covering letter"></textarea>
+				</div>
+				<div class="cv__title-two">
+					Attach your CV*
+				</div>
+				<button class="cv__btn" type="button">send</button>
+			</from>
 		</div>
 	</div>
 </div>
